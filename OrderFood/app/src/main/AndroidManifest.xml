@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.OrderFood"
+        tools:targetApi="31">
+        <activity
+            android:name=".activity.user.ManageUserAddAddressActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.user.ManageUserUpdateAddressActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.user.ManageUserAddressActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.user.ManageUserCommentActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.user.ManageUserUpdateMesActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.user.ManageUserUpdatePwdActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.user.ManageUserBuyActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.user.ManageUserActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.man.ManageManOrderFinishActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.man.ManageManCommentActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.man.ManageManOrderNoFinishActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.man.ManageManUpdatePwdActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.man.ManageManUpdateMesActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.man.ManageManUpdateFoodActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.man.ManageManAddFoodActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.man.ManageManActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.man.RegisterManActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.user.RegisterUserActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

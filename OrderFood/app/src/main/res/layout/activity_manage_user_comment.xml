@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity.user.ManageUserCommentActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/user_manage_comment_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/Theme"
+        app:title="发布评论"
+        app:titleTextColor="@color/white"
+        app:navigationIcon="@drawable/back"
+        />
+
+
+    <EditText
+        android:id="@+id/user_manage_comment_text"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:textSize="20dp"
+        android:hint="请输入评论内容"
+        android:paddingLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@android:drawable/edit_text"
+        android:inputType="textMultiLine"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="10dp"
+        >
+
+        <ImageView
+            android:id="@+id/user_comment_one"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:gravity="center_horizontal|center_vertical"
+            android:src="@drawable/xx"
+            android:background="#00FFFFFF"
+            android:layout_marginLeft="5dp"
+            />
+
+        <ImageView
+            android:id="@+id/user_comment_two"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:gravity="center_horizontal|center_vertical"
+            android:src="@drawable/wxx"
+            android:background="#00FFFFFF"
+            android:layout_marginLeft="5dp"
+            />
+
+
+        <ImageView
+            android:id="@+id/user_comment_three"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:gravity="center_horizontal|center_vertical"
+            android:src="@drawable/wxx"
+            android:background="#00FFFFFF"
+            android:layout_marginLeft="5dp"
+            />
+
+
+
+        <ImageView
+            android:id="@+id/user_comment_four"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:gravity="center_horizontal|center_vertical"
+            android:src="@drawable/wxx"
+            android:background="#00FFFFFF"
+            android:layout_marginLeft="5dp"
+            />
+
+
+
+        <ImageView
+            android:id="@+id/user_comment_five"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:gravity="center_horizontal|center_vertical"
+            android:src="@drawable/wxx"
+            android:background="#00FFFFFF"
+            android:layout_marginLeft="5dp"
+            />
+
+        <TextView
+            android:id="@+id/user_comment_con"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="非常差"
+            android:layout_marginLeft="5dp"
+            />
+
+
+
+    </LinearLayout>
+
+
+    <ImageView
+        android:id="@+id/user_manage_comment_img"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <Button
+            android:id="@+id/user_manage_comment_pz"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="拍照"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            />
+
+        <Button
+            android:id="@+id/user_manage_comment_xc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="相册"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            />
+
+
+    </LinearLayout>
+
+
+
+    <Button
+        android:id="@+id/user_manage_comment_fbpl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@color/Theme"
+        android:text="发布评论"
+        android:textColor="#FFFFFF"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:layout_margin="20dp"
+        />
+
+</LinearLayout>

@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp"
+    android:layout_marginBottom="20dp"
+    android:background="@drawable/circle_background"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/list_user_order_finish_list_img"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/upimg"
+            android:layout_marginTop="10dp"
+
+            />
+
+        <TextView
+            android:id="@+id/list_user_order_finish_list_name"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:text="小铭购买用户"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:textStyle="bold"
+            android:gravity="center_horizontal|center_vertical"
+            />
+
+        <TextView
+            android:id="@+id/list_user_order_finish_list_time"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:text="2029-10-14 16:23"
+            android:layout_marginTop="10dp"
+            android:textStyle="bold"
+            android:gravity="right|center_vertical"
+            android:layout_weight="1"
+            android:layout_marginRight="10dp"
+            />
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="15dp">
+
+        <TextView
+             android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="收 货 人 : "
+            android:textStyle="bold"
+            android:layout_marginBottom="5dp"
+            />
+        <TextView
+            android:id="@+id/list_user_order_finish_list_receivePeo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="小铭"
+            android:layout_marginBottom="5dp"
+            />
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="15dp">
+
+        <TextView
+             android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="收货地址 : "
+            android:textStyle="bold"
+            android:layout_marginBottom="5dp"
+            />
+        <TextView
+            android:id="@+id/list_user_order_finish_list_receiveAdderss"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="上海市 浦东区 汤臣一品"
+            android:layout_marginBottom="5dp"
+            />
+    </LinearLayout>
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="15dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="联系方式 : "
+            android:textStyle="bold"
+            android:layout_marginBottom="5dp"
+            />
+        <TextView
+            android:id="@+id/list_user_order_finish_list_receivePhone"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="123456789"
+            android:layout_marginBottom="5dp"
+            />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#F5F5F5"
+        />
+
+
+
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/list_user_order_finish_list_foodList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clipToPadding="false"
+        android:scrollbars="vertical"
+        />
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#F5F5F5"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:layout_marginTop="15dp"
+        >
+
+        <TextView
+            android:id="@+id/list_user_order_finish_list_sta"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="订单待处理"
+            android:textColor="#FF3D00"
+            android:textStyle="bold"
+            android:layout_marginLeft="10dp"
+            android:textSize="12sp"
+            />
+
+        <TextView
+           android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="总计："
+            android:textStyle="bold"
+            android:layout_marginLeft="20dp"
+            android:textSize="12sp"
+            android:layout_weight="3"
+            android:gravity="center_vertical|right"
+            />
+
+        <TextView
+            android:id="@+id/list_user_order_finish_list_sumPrice"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="￥ 26"
+            android:textColor="@color/Theme"
+            android:textStyle="bold"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical|right"
+            android:layout_marginRight="20dp"
+            />
+
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:gravity="right"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/list_user_order_finish_list_comment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@color/Theme"
+            android:text="评论"
+            android:textColor="#FFFFFF"
+            android:foreground="?android:attr/selectableItemBackground"
+            />
+
+
+    </LinearLayout>
+
+
+
+
+
+
+
+
+
+</LinearLayout>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/man_manage_bottom_menu_home"
+        android:title="首页"
+        app:showAsAction="always"
+        android:icon="@drawable/home"
+        />
+
+
+
+    <item
+        android:id="@+id/man_manage_bottom_menu_add"
+        android:title="添加商品"
+        app:showAsAction="always"
+        android:icon="@drawable/add"/>
+
+    <item
+        android:id="@+id/man_manage_bottom_menu_my"
+        android:title="我的"
+        app:showAsAction="always"
+        android:icon="@drawable/my"/>
+
+
+</menu>

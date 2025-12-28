@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:orientation="vertical"
+android:background="@drawable/bac"
+    tools:context=".activity.user.ManageUserUpdateAddressActivity">
+
+
+<androidx.appcompat.widget.Toolbar
+    android:id="@+id/user_manage_updateAddress_bar"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:title="更改我的收货地址"
+    app:titleTextColor="@color/white"
+    android:background="@color/Theme"
+    app:navigationIcon="@drawable/back"
+    />
+
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_gravity="center_horizontal|center_vertical"
+        >
+
+        <EditText
+            android:id="@+id/user_manage_updateAddress_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="请输入收货昵称"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/circle_background"
+            android:padding="12dp"
+            />
+
+        <EditText
+            android:id="@+id/user_manage_updateAddress_address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="请输入收货地址"
+            android:layout_marginTop="10dp"
+            android:background="@android:drawable/edit_text"
+            android:padding="12dp"
+            android:inputType="textMultiLine"
+            android:minLines="5"
+            />
+
+        <EditText
+            android:id="@+id/user_manage_updateAddress_phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="请输入联系方式"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/circle_background"
+            android:padding="12dp"
+            android:inputType="number"
+            />
+
+
+        <Button
+            android:id="@+id/user_manage_updateAddress_up"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@color/Theme"
+            android:text="修改收货地址"
+            android:textColor="#FFFFFF"
+            android:foreground="?android:attr/selectableItemBackground"
+            />
+
+
+    </LinearLayout>
+
+
+</ScrollView>
+
+
+</LinearLayout>

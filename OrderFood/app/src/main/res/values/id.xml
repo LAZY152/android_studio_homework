@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 商家注册头像选择标记ID -->
+    <item name="tag_avatar_selected" type="id"/>
+</resources>

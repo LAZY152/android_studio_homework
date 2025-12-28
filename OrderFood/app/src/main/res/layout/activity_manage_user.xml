@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:orientation="vertical"
+tools:context=".activity.user.ManageUserActivity">
+
+
+
+
+<FrameLayout
+    android:id="@+id/user_manage_frame"
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:layout_weight="1"/>
+
+
+
+
+<com.google.android.material.bottomnavigation.BottomNavigationView
+    android:id="@+id/user_manage_bottom_menu"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#FEFEFE"
+    app:menu="@menu/user_bottom_menu"
+    app:itemTextColor="@color/select_color_text"
+    app:itemIconTint="@color/select_color_ico"
+    />
+<!--    app:itemTextColor="@color/selectcolor"-->
+<!--    app:itemIconTint="@color/selectcolor"-->
+
+
+
+</LinearLayout>

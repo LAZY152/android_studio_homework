@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+    <!-- 弹窗标题：将 android:marginBottom 改为 android:layout_marginBottom -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="注销账号"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_marginBottom="15dp"/> <!-- 关键修改：添加 layout_ 前缀 -->
+
+    <!-- 密码输入框：将 android:marginBottom 改为 android:layout_marginBottom -->
+    <EditText
+        android:id="@+id/et_logout_pwd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="请输入当前账号密码"
+        android:inputType="textPassword"
+        android:background="@drawable/shape_edittext_border"
+        android:padding="10dp"
+        android:layout_marginBottom="20dp"/> <!-- 关键修改：添加 layout_ 前缀 -->
+
+    <!-- 按钮组 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="end">
+
+        <Button
+            android:id="@+id/btn_logout_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="取消"
+            android:background="@color/white"
+            android:textColor="#333333"
+            android:layout_marginRight="15dp"/> <!-- 若有此属性，同样确保带 layout_ 前缀 -->
+
+        <Button
+            android:id="@+id/btn_logout_confirm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="确认注销"
+            android:background="@color/Theme"
+            android:textColor="@color/white"/>
+
+    </LinearLayout>
+
+</LinearLayout>

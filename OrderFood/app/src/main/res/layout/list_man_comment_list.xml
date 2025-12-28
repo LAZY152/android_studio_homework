@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+   xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:background="@drawable/circle_background"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/man_comment_tx"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/upimg"
+            android:layout_marginTop="10dp"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="10dp"
+            />
+
+        <TextView
+
+            android:id="@+id/man_comment_name"
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:text="小铭用户"
+            android:layout_toRightOf="@+id/man_comment_tx"
+            android:gravity="left|center_vertical|center_horizontal"
+            android:textStyle="bold"
+            android:layout_marginLeft="5dp"
+            />
+
+        <TextView
+            android:id="@+id/man_comment_time"
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:text="2029-10-23 05:36"
+            android:layout_toRightOf="@+id/man_comment_tx"
+            android:layout_below="@+id/man_comment_name"
+            android:gravity="left|center_vertical|center_horizontal"
+            android:textStyle="bold"
+            android:layout_marginLeft="5dp"
+            />
+
+    </RelativeLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="10dp"
+        >
+
+        <ImageView
+            android:id="@+id/man_comment_one"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:gravity="center_horizontal|center_vertical"
+            android:src="@drawable/xx"
+            android:background="#00FFFFFF"
+            android:layout_marginLeft="5dp"
+            />
+
+        <ImageView
+            android:id="@+id/man_comment_two"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:gravity="center_horizontal|center_vertical"
+            android:src="@drawable/wxx"
+            android:background="#00FFFFFF"
+            android:layout_marginLeft="5dp"
+            />
+
+
+        <ImageView
+            android:id="@+id/man_comment_three"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:gravity="center_horizontal|center_vertical"
+            android:src="@drawable/wxx"
+            android:background="#00FFFFFF"
+            android:layout_marginLeft="5dp"
+            />
+
+
+
+        <ImageView
+            android:id="@+id/man_comment_four"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:gravity="center_horizontal|center_vertical"
+            android:src="@drawable/wxx"
+            android:background="#00FFFFFF"
+            android:layout_marginLeft="5dp"
+            />
+
+
+
+        <ImageView
+            android:id="@+id/man_comment_five"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:gravity="center_horizontal|center_vertical"
+            android:src="@drawable/wxx"
+            android:background="#00FFFFFF"
+            android:layout_marginLeft="5dp"
+            />
+
+        <TextView
+            android:id="@+id/man_comment_con"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="非常满意"
+            android:layout_marginLeft="5dp"
+            />
+
+
+
+    </LinearLayout>
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:orientation="vertical"
+        >
+
+        <TextView
+            android:id="@+id/man_comment_userCon"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="这是我吃过的最好吃的麻辣烫"
+            android:layout_marginLeft="10dp"
+            />
+
+        <ImageView
+            android:id="@+id/man_comment_userImg"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:src="@drawable/upimg"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:layout_marginTop="5dp"
+            />
+
+
+
+    </LinearLayout>
+
+
+
+
+
+
+
+</LinearLayout>

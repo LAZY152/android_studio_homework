@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/bac"
+    tools:context=".activity.man.ManageManUpdateMesActivity">
+
+    <!-- Toolbar -->
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/man_manage_updateBusiness_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/Theme"
+        app:title="修 改 店 铺 信 息"
+        app:titleTextColor="@color/white"
+        app:navigationIcon="@drawable/back" />
+
+    <!-- 滚动容器 -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp">
+
+            <!-- 图片 -->
+            <ImageView
+                android:id="@+id/register_man_tx"
+                android:layout_width="match_parent"
+                android:layout_height="90dp"
+                android:src="@drawable/upimg"
+                android:layout_marginTop="45dp" />
+
+            <!-- 店铺名称 提示 -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="店铺名称"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="#333333"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="5dp" />
+            <!-- 店铺名称输入框 -->
+            <EditText
+                android:id="@+id/man_manage_updateBusiness_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="请输入店铺名称"
+                android:background="@drawable/circle_background"
+                android:padding="12dp" />
+
+            <!-- 店铺描述 提示 -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="店铺描述"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="#333333"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="5dp" />
+            <!-- 店铺描述输入框 -->
+            <EditText
+                android:id="@+id/man_manage_updateBusiness_des"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="请输入店铺描述"
+                android:inputType="textMultiLine"
+                android:minLines="5"
+                android:gravity="top"
+                android:maxLines="5"
+                android:scrollbars="vertical"
+                android:padding="12dp"
+                android:background="@android:drawable/edit_text" />
+
+            <!-- 店铺类型 提示 -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="店铺类型"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="#333333"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="5dp" />
+            <!-- 店铺类型输入框 -->
+            <EditText
+                android:id="@+id/man_manage_updateBusiness_type"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="请输入店铺类型"
+                android:background="@drawable/circle_background"
+                android:padding="12dp" />
+
+            <!-- 按钮 -->
+            <Button
+                android:id="@+id/man_manage_updateBusiness_update"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@color/Theme"
+                android:text="修改商家信息"
+                android:textColor="#FFFFFF"
+                android:foreground="?android:attr/selectableItemBackground" />
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

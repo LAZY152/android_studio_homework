@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/bac"
+    android:layout_gravity="center_vertical|center_horizontal"
+    tools:context=".activity.man.ManageManUpdatePwdActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/man_manage_updateBusiness_pwd_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:title="修 改 账 号 密 码"
+        app:titleTextColor="@color/white"
+        android:background="@color/Theme"
+        app:navigationIcon="@drawable/back" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_gravity="center_horizontal|center_vertical">
+
+            <!-- 新增：与原有输入框样式完全一致的输入框（放在最上方，保持布局连贯） -->
+            <EditText
+                android:id="@+id/man_manage_updateBusiness_pwd_oldPwd"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="请输入原密码"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/circle_background"
+                android:padding="12dp"
+                android:inputType="textPassword" />
+
+            <!-- 原有第一个输入框（无任何修改） -->
+            <EditText
+                android:id="@+id/man_manage_updateBusiness_pwd_pwd"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="请输入新密码"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/circle_background"
+                android:padding="12dp"
+                android:inputType="textPassword" />
+
+            <!-- 原有第二个输入框（无任何修改） -->
+            <EditText
+                android:id="@+id/man_manage_updateBusiness_pwd_confirmPwd"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="请确认密码"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/circle_background"
+                android:padding="12dp"
+                android:inputType="textPassword" />
+
+            <!-- 原有按钮（无任何修改） -->
+            <Button
+                android:id="@+id/man_manage_updateBusiness_pwd_update"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@color/Theme"
+                android:text="修改密码"
+                android:textColor="#FFFFFF"
+                android:foreground="?android:attr/selectableItemBackground" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

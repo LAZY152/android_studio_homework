@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity.man.RegisterManActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/register_man_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/Theme"
+        app:navigationIcon="@drawable/back"
+        app:title="注册外卖用户"
+        app:titleTextColor="@color/white"/>
+
+    <!-- 替换为NestedScrollView，兼容性更强，避免滚动相关异常 -->
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:scrollbars="vertical"
+        android:padding="0dp">
+
+        <!-- 严格保证：直接子布局layout_height="wrap_content"（滚动前提，无语法错误） -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp">
+
+            <ImageView
+                android:id="@+id/register_man_tx"
+                android:layout_width="match_parent"
+                android:layout_height="90dp"
+                android:src="@drawable/upimg"
+                android:layout_marginTop="25dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="订 餐 外 卖"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:textColor="@color/black"
+                android:gravity="center"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="让生活变得简单，让美食送上家门"
+                android:textSize="15sp"
+                android:textColor="@color/black"
+                android:gravity="center"/>
+
+            <EditText
+                android:id="@+id/register_man_id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="请输入店铺账号"
+                android:layout_marginTop="30dp"/>
+
+            <EditText
+                android:id="@+id/register_man_pwd"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="请输入店铺密码"
+                android:layout_marginTop="10dp"
+                android:inputType="textPassword"/>
+
+            <!-- 确认密码框 -->
+            <EditText
+                android:id="@+id/register_man_pwd_confirm"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="请确认店铺密码"
+                android:layout_marginTop="10dp"
+                android:inputType="textPassword"/>
+
+            <EditText
+                android:id="@+id/register_man_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="请输入店铺名称"
+                android:layout_marginTop="10dp"/>
+
+            <EditText
+                android:id="@+id/register_man_des"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="请输入店铺描述"
+                android:layout_marginTop="10dp"
+                android:inputType="textMultiLine"
+                android:minLines="5"
+                android:gravity="top"
+                android:maxLines="5"
+                android:scrollbars="vertical"
+                android:background="@android:drawable/edit_text"/>
+
+            <EditText
+                android:id="@+id/register_man_type"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="请输入店铺类型"
+                android:layout_marginTop="10dp"/>
+
+            <Button
+                android:id="@+id/register_man_zcsj"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="30dp"
+                android:background="@color/Theme"
+                android:text="商家注册"
+                android:textColor="@color/white"
+                android:foreground="?attr/selectableItemBackground"/> <!-- 优化兼容，移除android:前缀 -->
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</LinearLayout>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity.user.frament.UserNoFinishOrderFragment">
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/Theme">
+
+        <androidx.appcompat.widget.SearchView
+            android:id="@+id/user_my_order_no_finish_search"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:iconifiedByDefault="false"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="15dp"
+            android:background="@drawable/search_edit"
+            app:queryHint="搜索订单"
+            />
+    </androidx.appcompat.widget.Toolbar>
+
+
+    <ListView
+        android:id="@+id/user_my_order_no_finish_listView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:dividerHeight="10dp"
+        android:layout_gravity="center"
+        android:divider="@android:color/transparent"
+        android:layout_marginTop="10dp"
+        android:background="#F5F5F5"
+        />
+
+</LinearLayout>

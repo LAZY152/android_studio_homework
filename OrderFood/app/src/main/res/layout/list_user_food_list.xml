@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/back_round"
+    >
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="2dp"
+        android:paddingBottom="2dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+
+        >
+
+        <ImageView
+            android:id="@+id/user_food_list_foodImg"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/login"
+            android:layout_marginLeft="7dp"
+            android:scaleType="centerCrop"
+            android:paddingLeft="5dp"
+
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="left"
+            android:layout_marginLeft="15dp"
+            >
+
+            <TextView
+
+                android:id="@+id/user_food_list_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="东北麻辣烫,炒菜的味道"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:gravity="left"
+                android:layout_marginTop="5dp"
+                />
+
+            <TextView
+                android:id="@+id/user_food_list_saleNum"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="月销:300 份"
+                android:gravity="left"
+                android:layout_marginTop="5dp"
+                />
+
+
+            <TextView
+                android:id="@+id/user_food_list_price"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="价格:19.98 元"
+                android:gravity="left"
+                android:layout_marginTop="5dp"
+                android:textColor="#D32F2F"
+                />
+
+
+            <TextView
+                android:id="@+id/user_food_list_des"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="描述:来自传统酱香"
+                android:gravity="left"
+                android:layout_marginTop="5dp"
+                />
+
+
+
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#F5F5F5"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="2dp"
+        android:paddingBottom="2dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="2dp"
+
+        >
+
+        <ImageView
+            android:id="@+id/user_food_list_businessTx"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/login"
+            android:layout_marginLeft="7dp"
+            android:scaleType="centerCrop"
+            android:paddingLeft="5dp"
+
+            />
+
+        <TextView
+            android:id="@+id/user_food_list_businessName"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:gravity="center_horizontal|center_vertical"
+            android:text="小铭店铺"
+            android:textStyle="bold"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:gravity="center_horizontal|center_vertical"
+            android:text="评分: "
+            android:textStyle="bold"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:textColor="#FF3D00"
+            />
+
+        <TextView
+            android:id="@+id/user_food_list_businessPf"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:gravity="center_horizontal|center_vertical"
+            android:text="5.9分"
+            android:textStyle="bold"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:textColor="#FF3D00"
+            />
+
+
+
+
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity.user.ManageUserBuyActivity">
+
+<androidx.appcompat.widget.Toolbar
+    android:id="@+id/user_buy_bar"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/Theme"
+    app:title="店铺信息"
+    app:titleTextColor="@color/white"
+    app:navigationIcon="@drawable/back"
+    />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:background="@drawable/bg"
+        android:layout_height="125dp">
+
+        <ImageView
+            android:id="@+id/user_buy_businessTx"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/login"
+            android:layout_marginTop="7dp"
+            android:scaleType="centerCrop"
+            android:layout_marginLeft="5dp"
+            />
+
+        <TextView
+            android:id="@+id/user_buy_businessName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="小铭店铺"
+            android:layout_toRightOf="@+id/user_buy_businessTx"
+            android:layout_marginTop="7dp"
+            android:layout_marginLeft="5dp"
+            android:textColor="#5A5A5A"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:gravity="center_vertical|center_horizontal"
+            />
+
+        <TextView
+            android:id= "@+id/user_buy_businessDes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="简介:这个店铺很不错"
+            android:layout_toRightOf="@+id/user_buy_businessTx"
+            android:layout_below= "@+id/user_buy_businessName"
+            android:layout_marginTop="7dp"
+            android:layout_marginLeft="5dp"
+            android:textColor="#CCFFFFFF"
+            android:textStyle="bold|italic"
+            android:gravity="left"
+            />
+
+    </RelativeLayout>
+
+
+    <com.google.android.material.tabs.TabLayout
+        android:id= "@+id/user_buy_tab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:tabGravity="fill"
+        app:tabIndicatorColor="@color/Theme"
+        app:tabIndicatorHeight="4dp"
+        android:layout_marginLeft="20dp"
+
+
+
+        />
+
+
+
+    <androidx.viewpager2.widget.ViewPager2
+        android:id= "@+id/user_buy_pager"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:padding="10dp">
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/tb"
+                android:padding="3dp"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:textColor="@color/Theme"
+                android:text="￥"
+                android:gravity="center_horizontal|center_vertical"
+                android:layout_marginLeft="20dp"
+                android:padding="3dp"
+                />
+
+            <TextView
+                android:id="@+id/user_buy_businessFood"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+            />
+
+            <TextView
+                android:id="@+id/user_buy_businessPrice"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:textColor="@color/Theme"
+                android:text="0"
+                android:gravity="start|center_vertical"
+                android:layout_marginLeft="10dp"
+                android:padding="3dp"
+                android:layout_weight="2"
+                />
+            <Button
+                android:id="@+id/user_buy_businessBuy_con"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:padding="3dp"
+                android:layout_weight="1"
+                android:background="@drawable/circle_background_buy"
+                android:text="去结算"
+                android:textColor="#FFFFFF"
+                android:foreground="?android:attr/selectableItemBackground"
+                />
+
+
+        </LinearLayout>
+
+
+</LinearLayout>

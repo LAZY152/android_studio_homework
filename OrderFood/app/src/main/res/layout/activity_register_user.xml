@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity.user.RegisterUserActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/register_user_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:title="注册外卖用户"
+        app:titleTextColor="@color/white"
+        android:background="@color/Theme"
+        app:navigationIcon="@drawable/back"
+        />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_gravity="center_horizontal|center_vertical"
+            >
+            <ImageView
+                android:id="@+id/register_user_tx"
+                android:layout_width="match_parent"
+                android:layout_height="90dp"
+                android:src="@drawable/upimg"
+                android:layout_marginTop="45dp">
+            </ImageView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="订 餐 外 卖"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:textColor="#000000"
+                android:gravity="center_vertical|center_horizontal"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="让生活变得简单，让美食送上家门"
+                android:textSize="15sp"
+                android:gravity="center_vertical|center_horizontal"
+                />
+
+            <EditText
+                android:id="@+id/register_user_account"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="请输入用户账号"
+                android:layout_marginTop="50dp"
+                />
+
+            <EditText
+                android:id="@+id/register_user_pwd"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="请输入用户密码"
+                android:layout_marginTop="10dp"
+                android:inputType="textPassword"
+                />
+
+            <!-- 【插入开始】确认密码输入框（格式与原密码框完全一致） -->
+            <EditText
+                android:id="@+id/register_user_pwd_confirm"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="请确认用户密码"
+                android:layout_marginTop="10dp"
+                android:inputType="textPassword"
+                />
+            <!-- 【插入结束】 -->
+
+            <EditText
+                android:id="@+id/register_user_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="请输入用户昵称"
+                android:layout_marginTop="10dp"
+                />
+
+            <RadioGroup
+                android:id="@+id/register_user_sex_group"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                >
+
+                <RadioButton
+                    android:id="@+id/register_user_nan"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="男"/>
+
+                <!-- 【语法修正】原代码此处写成了android:layout_width="0dp"（笔误缺失闭合），已修正 -->
+                <RadioButton
+                    android:id="@+id/register_user_nv"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="女"
+                    android:layout_weight="1"
+                    />
+
+            </RadioGroup>
+            <EditText
+                android:id="@+id/register_user_address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="请输入家庭住址"
+                android:layout_marginTop="10dp"
+                />
+
+            <EditText
+                android:id="@+id/register_user_phone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="请输入联系方式"
+                android:layout_marginTop="10dp"
+                />
+
+            <Button
+                android:id="@+id/register_user_zcyh"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@color/Theme"
+                android:text="注册用户账号"
+                android:textColor="#FFFFFF"
+                android:foreground="?android:attr/selectableItemBackground"
+                />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>
