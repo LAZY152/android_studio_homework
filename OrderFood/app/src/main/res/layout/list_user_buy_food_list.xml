@@ -52,15 +52,6 @@
                 android:layout_marginTop="5dp"
                 />
 
-            <TextView
-                android:id="@+id/user_buy_food_list_saleNum"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="月销:300 份"
-                android:gravity="left"
-                android:layout_marginTop="5dp"
-                />
-
 
             <TextView
                 android:id="@+id/user_buy_food_list_price"
